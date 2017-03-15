@@ -86,7 +86,7 @@
 			} );
 
 		},
-		// credits : http://stackoverflow.com/a/3647634
+		// benefits : http://stackoverflow.com/a/3647634
 		_getDir : function( $el, coordinates ) {
 			
 			// the width and height of the current div

@@ -1,33 +1,39 @@
-<div id="footerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h4>About</h4>
-                <div class="hline-w"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="col-lg-4">
-                <h4>Social Links</h4>
-                <div class="hline-w"></div>
-                <p>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-tumblr"></i></a>
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <h4>Our Bunker</h4>
-                <div class="hline-w"></div>
-                <p>
-                    Some Ave, 987,<br/> 23890, New York,<br/> United States.<br/>
-                </p>
-            </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h3 class="footer-title">Follow Me!</h3>
+        <p>Vuoi ricevere news su altri template?<br/>
+          Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
+          Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
+        </p>
 
+        <!-- LICENSE -->
+        <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy"
+       property="dc:title">Flatfy Theme </a> by
+       <a rel="dc:creator" href="http://www.andreagalanti.it"
+       property="cc:attributionName">Andrea Galanti</a>
+       is licensed to the public under
+       <BR>the <a rel="license"
+       href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative
+       Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
+
+
+      </div> <!-- /col-xs-7 -->
+
+      <div class="col-md-5">
+        <div class="footer-banner">
+          <h3 class="footer-title">Flatfy Theme</h3>
+          <ul>
+            <li>12 Column Grid Bootstrap</li>
+            <li>Form Contact</li>
+            <li>Drag Gallery</li>
+            <li>Full Responsive</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+          Go to: <a href="http://andreagalanti.it/flatfy" target="_blank">andreagalanti.it/flatfy</a>
         </div>
-        <!-- /row -->
+      </div>
     </div>
-    <!-- /container -->
-</div>
-<!-- /footerwrap -->
+  </div>
+</footer>

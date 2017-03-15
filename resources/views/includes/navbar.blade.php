@@ -1,29 +1,26 @@
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Centradas.es</a>
+            <a class="navbar-brand" href="#home">SuperCamarero</a>
         </div>
-        <div class="navbar-collapse collapse navbar-right">
+
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">INICIO</a></li>
-                <li><a href="portfolio">PORTFOLIO</a></li>
-                <li><a href="contact">CONTACTO</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">PARTIDOS<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="blog">UD Las Palmas</a></li>
-                        <li><a href="single-post">UD Tenerife</a></li>
-                    </ul>
-                </li>
+
+                <li class="menuItem"><a href="#whatis">¿Qué ofrecemos?</a></li>
+                <li class="menuItem"><a href="#restaurant">Para el restaurante</a></li>
+                <li class="menuItem"><a href="#screen">Para el cliente</a></li>
+                <li class="menuItem"><a href="#clients">Beneficios</a></li>
+                <li class="menuItem"><a href="#contact">Contacto</a></li>
             </ul>
         </div>
-        <!--/.nav-collapse -->
+
     </div>
-</div>
+</nav>

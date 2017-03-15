@@ -5,6 +5,7 @@
 
 </head>
 <body>
+    @include('includes.header')
     @include('includes.navbar')
 
     @yield('content')
