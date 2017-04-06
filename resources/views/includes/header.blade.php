@@ -5,7 +5,8 @@
 
 <!-- FullScreen -->
 <div class="intro-header">
-    <div class="col-xs-12 text-center abcen1">
+    <div class="vh-center">
+    <!-- <div class="col-xs-12 text-center abcen1"> -->
         <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">SuperCamarero</h1>
         <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">El camarero en tu bolsillo</h3>
         <ul class="list-inline intro-social-buttons">
