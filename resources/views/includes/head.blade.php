@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="author" content="">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <title>SuperCamarero</title>
 
@@ -24,7 +25,14 @@
 <!-- Custom CSS-->
 <link href="css/general.css" rel="stylesheet">
 
-<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+<script src="js/modernizr-2.8.3.min.js"></script>
+
+<script>
+    window.Laravel = {!! json_encode([
+        'csrfToken' => csrf_token(),
+    ]) !!};
+</script>
+
 <!--[if IE 9]>
     <script src="js/PIE_IE9.js"></script>
 <![endif]-->

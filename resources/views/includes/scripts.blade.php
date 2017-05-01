@@ -22,3 +22,5 @@
 <script src="js/uiMorphingButton_inflow.js"></script>
 <!-- Magnific Popup core JS file -->
 <script src="js/jquery.magnific-popup.js"></script>
+
+<script src="{{ asset('js/app.js') }}"></script>
