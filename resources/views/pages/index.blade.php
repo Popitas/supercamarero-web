@@ -12,7 +12,7 @@
             <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">SuperCamarero</h1>
             <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">El camarero en tu bolsillo</h3>
             <ul class="list-inline intro-social-buttons">
-                <li><a href="" class="btn btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s">
+                <li><a href="login" class="btn btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s">
                     <span class="network-name">Iniciar sesión</span></a>
                 </li>
                 <li id="download">
