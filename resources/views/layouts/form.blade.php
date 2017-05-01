@@ -2,15 +2,14 @@
 <html lang="es">
 <head>
     @include('includes.head')
+    @yield('css')
 
 </head>
 <body>
-    @yield('header')
-    @include('includes.navbar')
+    @include('includes.returnbar')
 
     @yield('content')
 
-    @include('includes.footer')
     @include('includes.scripts')
 
 </body>
