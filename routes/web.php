@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+#Añadido por nano para poder usar display database
+Route::get('/home', 'Controller@getData');
+#Añadir datos
+Route::post('/insert','Controller@insert');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+#Route::get('/home', 'HomeController@index')->name('home');

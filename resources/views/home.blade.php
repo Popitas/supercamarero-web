@@ -3,6 +3,8 @@
 @section('specific-css')
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-table.css">
+<link rel="stylesheet" href="css/pepito.css">
+
 @endsection
 
 @section('content')
@@ -11,6 +13,55 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Panel de control</div>
+<center>
+  <form action="/insert" method="post">
+    <table>
+      <tr>
+        {{ csrf_field() }}
+      <td> Nombre: </td>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td> Descripcion: </td>
+      <td><input type="text" name="description"></td>
+    </tr>
+    <tr>
+      <td> Ingredientes: </td>
+      <td><input type="text" name="ingredients"></td>
+    </tr>
+    <tr>
+      <td> Foto: </td>
+      <td><input type="text" name="picture"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="submit" value="Añadir"></td>
+    </tr>
+    </table>
+</center>
+
+
+
+                <center>
+                  <table style="width:100%">
+                    <tr>
+                      <td>Nombre </td>
+                        <td>Descripción </td>
+                        <td>Ingredientes </td>
+                    </tr>
+                  </table>
+                  @foreach ($data as $value)
+                    <table>
+                      <tr>
+                        <td>{{$value->name}}</td>
+                          <td>{{$value->description}}</td>
+                          <td>{{$value->ingredients}}</td>
+                          <td><a href=""><button>Editar</button>&nbsp;<a href=""><button>Borrar</button>&nbsp;</tr>
+                      </tr>
+                    </table>
+                  @endforeach
+                </center>
+
+
 
                 <div class="panel-body">
                     <table data-toggle="table"
