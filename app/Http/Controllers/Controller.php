@@ -25,9 +25,9 @@ class Controller extends BaseController
       $data = array('name' =>$name ,"description"=>$description, "ingredients"=>$ingredients, "picture"=>$picture);
 
       \DB::table('platos')->insert($data);
-      echo "Plato añadido con éxito";
+      return getData();
     }
-    
+
     #Creada por Nano
     function getData(){
       $data['data'] = \DB::table('platos')->get();
