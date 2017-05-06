@@ -2,17 +2,10 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
-
-    protected $table = 'users';
-    public $primaryKey = 'email';
-    public $incrementing = false;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -23,7 +16,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes excluded from the model's JSON form.
      *
      * @var array
      */

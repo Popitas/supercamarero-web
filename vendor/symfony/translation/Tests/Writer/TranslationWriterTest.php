@@ -11,16 +11,14 @@
 
 namespace Symfony\Component\Translation\Tests\Writer;
 
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Translation\Dumper\DumperInterface;
 use Symfony\Component\Translation\MessageCatalogue;
 use Symfony\Component\Translation\Writer\TranslationWriter;
 
-class TranslationWriterTest extends TestCase
+class TranslationWriterTest extends \PHPUnit_Framework_TestCase
 {
     public function testWriteTranslations()
     {
-        $dumper = $this->getMockBuilder('Symfony\Component\Translation\Dumper\DumperInterface')->getMock();
+        $dumper = $this->getMock('Symfony\Component\Translation\Dumper\DumperInterface');
         $dumper
             ->expects($this->once())
             ->method('dump');
@@ -32,35 +30,18 @@ class TranslationWriterTest extends TestCase
 
     public function testDisableBackup()
     {
-        $nonBackupDumper = new NonBackupDumper();
-        $backupDumper = new BackupDumper();
+        $dumper = $this->getMock('Symfony\Component\Translation\Dumper\DumperInterface');
+        $dumper
+            ->expects($this->never())
+            ->method('setBackup');
+        $phpDumper = $this->getMock('Symfony\Component\Translation\Dumper\PhpFileDumper');
+        $phpDumper
+            ->expects($this->once())
+            ->method('setBackup');
 
         $writer = new TranslationWriter();
-        $writer->addDumper('non_backup', $nonBackupDumper);
-        $writer->addDumper('backup', $backupDumper);
+        $writer->addDumper('test', $dumper);
+        $writer->addDumper('php', $phpDumper);
         $writer->disableBackup();
-
-        $this->assertFalse($backupDumper->backup, 'backup can be disabled if setBackup() method does exist');
-    }
-}
-
-class NonBackupDumper implements DumperInterface
-{
-    public function dump(MessageCatalogue $messages, $options = array())
-    {
-    }
-}
-
-class BackupDumper implements DumperInterface
-{
-    public $backup = true;
-
-    public function dump(MessageCatalogue $messages, $options = array())
-    {
-    }
-
-    public function setBackup($backup)
-    {
-        $this->backup = $backup;
     }
 }
